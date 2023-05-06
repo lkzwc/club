@@ -37,19 +37,12 @@
 		justify-content: space-between;
 		align-items: center;
 		box-sizing: border-box;
-		border-bottom: 1px solid #e1e1e1;
-		background-color: #FFFFFF;
-		color: #333;
 	}
 
 	.logo {
 		display: flex;
-		
 		flex-direction: row;
 		align-items: center;
 		flex: 1;
-	}
-	.uni-top-window--placeholder{
-		height:"60px !important"
 	}
 </style>

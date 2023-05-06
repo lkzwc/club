@@ -3,14 +3,13 @@
 		"path": "pages/index/topWindow/topWindow",
 		"style": {
 			"height": "60px",
-			"background":"#515151"
+			"background": "#515151"
 		}
 	},
 	"leftWindow": {
 		"path": "pages/index/leftWindow/leftWindow",
 		"style": {
-			"width": "200px",
-			"marginLeft":"100px"
+			"width": "200px"
 		},
 		"matchMedia": {
 			"minWidth": 768 //生效条件，当窗口宽度大于768px时显示
@@ -19,7 +18,10 @@
 	"rightWindow": {
 		"path": "pages/index/rightWindow/rightWindow",
 		"style": {
-			"width": "15%" // 页面宽度
+			"width": "200px" // 页面宽度
+		},
+		"matchMedia": {
+			"minWidth": 900 //生效条件，当窗口宽度大于768px时显示
 		}
 	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
@@ -45,17 +47,15 @@
 					}
 				}
 			}
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
 		}
-	    ,{
-            "path" : "pages/login/login",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-    ],
+	],
 	"globalStyle": {
 		"pageOrientation": "portrait",
 		"navigationBarTitleText": "Hello uniapp",
@@ -68,6 +68,7 @@
 			"navigationStyle": "custom"
 		},
 		"h5": {
+			"width":"70%",
 			"navigationBarTextStyle": "#2af813",
 			"navigationBarBackgroundColor": "#F1F1F1"
 		}
@@ -80,11 +81,17 @@
 		"borderStyle": "black",
 		"backgroundColor": "#F8F8F8",
 		"list": [{
-			"pagePath": "pages/tabBar/dynamic/dynamic",
-			"iconPath": "static/logo.png",
-			"selectedIconPath": "static/logo.png.png",
-			"text": "动态"
-		}
-		 ]
+				"pagePath": "pages/tabBar/dynamic/dynamic",
+				"iconPath": "static/logo.png",
+				"selectedIconPath": "static/logo.png",
+				"text": "动态"
+			},
+			{
+				"pagePath": "pages/tabBar/API/API",
+				"iconPath": "static/api.png",
+				"selectedIconPath": "static/apiHL.png",
+				"text": "接口"
+			}
+		]
 	}
 }

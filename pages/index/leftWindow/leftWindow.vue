@@ -59,6 +59,7 @@
 	background-color: aqua;
 }
 .menu{
-	width: 80px;
+	width: 120px;
+	text-align: center;
 }
 </style>
