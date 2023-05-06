@@ -1,0 +1,90 @@
+{
+	"topWindow": {
+		"path": "pages/index/topWindow/topWindow",
+		"style": {
+			"height": "60px",
+			"background":"#515151"
+		}
+	},
+	"leftWindow": {
+		"path": "pages/index/leftWindow/leftWindow",
+		"style": {
+			"width": "200px",
+			"marginLeft":"100px"
+		},
+		"matchMedia": {
+			"minWidth": 768 //生效条件，当窗口宽度大于768px时显示
+		}
+	},
+	"rightWindow": {
+		"path": "pages/index/rightWindow/rightWindow",
+		"style": {
+			"width": "15%" // 页面宽度
+		}
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path": "pages/tabBar/dynamic/dynamic",
+			"style": {
+				"navigationBarTitleText": "动态",
+				"app-plus": {
+					"bounce": "vertical",
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue534",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "22px",
+							"color": "#FFFFFF"
+						}]
+					}
+				}
+			}
+		}
+	    ,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"pageOrientation": "portrait",
+		"navigationBarTitleText": "Hello uniapp",
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#007AFF",
+		"backgroundColor": "#2af813",
+		"backgroundColorTop": "#F4F5F6",
+		"backgroundColorBottom": "#F4F5F6",
+		"mp-360": {
+			"navigationStyle": "custom"
+		},
+		"h5": {
+			"navigationBarTextStyle": "#2af813",
+			"navigationBarBackgroundColor": "#F1F1F1"
+		}
+
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#007AFF",
+		"borderStyle": "black",
+		"backgroundColor": "#F8F8F8",
+		"list": [{
+			"pagePath": "pages/tabBar/dynamic/dynamic",
+			"iconPath": "static/logo.png",
+			"selectedIconPath": "static/logo.png.png",
+			"text": "动态"
+		}
+		 ]
+	}
+}
